@@ -1,0 +1,272 @@
+# Gloses mot à mot des sourates de DAGAN
+# Format : référence (sourate:verset:mot) | français | wolof (alphabet latin CLAD) | racine | note de grammaire
+# Le wolofal est généré automatiquement à partir de la colonne wolof.
+# Les traductions wolof sont À VÉRIFIER : corrigez-les ici ou dans l'application (bouton « Corriger »).
+
+# ── 1. Al-Fâtiha ──
+1:1:1 | Au nom (de) | Ci turu | س م و | بِ (par, avec) + اسْم (nom)
+1:1:2 | Allah | Yàlla | ا ل ه | Le nom propre de Dieu
+1:1:3 | le Tout Miséricordieux | Aji Yërmande ji | ر ح م | Forme فَعْلَان : miséricorde immense, qui englobe tout
+1:1:4 | le Très Miséricordieux | Aji Yërëm ji | ر ح م | Forme فَعِيل : miséricorde constante
+1:2:1 | La louange | Cant gi | ح م د | ال (le, la) + حَمْد (louange)
+1:2:2 | (est) à Allah | ñeel na Yàlla | ا ل ه | لِ (à, pour) + الله
+1:2:3 | Seigneur | Boroom | ر ب ب | Seigneur, Maître, Celui qui élève et prend soin
+1:2:4 | des mondes | àddina yépp | ع ل م | Pluriel de عَالَم (monde, univers)
+1:3:1 | Le Tout Miséricordieux | Aji Yërmande ji | ر ح م |
+1:3:2 | le Très Miséricordieux | Aji Yërëm ji | ر ح م |
+1:4:1 | Maître | Boroom | م ل ك | Participe actif : celui qui possède
+1:4:2 | (du) Jour | bésu | ي و م |
+1:4:3 | de la Rétribution | àtte bi | د ي ن | دِين : rétribution, jugement (aussi : religion)
+1:5:1 | C'est Toi (seul) | Yaw rekk | — | Pronom placé en tête : exclusivité (Toi seul)
+1:5:2 | nous adorons | lanuy jaamu | ع ب د | Verbe au présent, 1re pers. du pluriel (نَـ = nous)
+1:5:3 | et c'est Toi (seul) | te yaw rekk | — | وَ (et) + إِيَّاكَ
+1:5:4 | nous demandons l'aide | lanuy ñaan ndimbal | ع و ن | Forme X (اسْتَفْعَلَ) : demander quelque chose
+1:6:1 | Guide-nous | Gindi nu | ه د ي | Impératif + نَا (nous)
+1:6:2 | (vers) le chemin | yoon wi | ص ر ط |
+1:6:3 | droit | wu jub wi | ق و م | Participe de la forme X : ce qui est droit
+1:7:1 | (Le) chemin | Yoonu | ص ر ط |
+1:7:2 | de ceux | ñi | — | Pronom relatif pluriel : ceux qui
+1:7:3 | Tu as comblé (de bienfaits) | nga xéewal | ن ع م | Verbe au passé, 2e pers. (ـتَ = tu)
+1:7:4 | sur eux | ci ñoom | — | عَلَى (sur) + هِمْ (eux)
+1:7:5 | non pas | du | غ ي ر |
+1:7:6 | ceux qui ont encouru la colère | ñi ñu meree | غ ض ب | Participe passif (مَفْعُول)
+1:7:7 | sur eux | ci ñoom | — |
+1:7:8 | ni | te du | — | وَ (et) + لَا (non)
+1:7:9 | les égarés | ñi réer | ض ل ل | Participe actif pluriel
+
+# ── 103. Al-'Asr ──
+103:1:1 | Par le Temps ! | Ci jamono ji ! | ع ص ر | وَ de serment (par…) + العَصْر
+103:2:1 | Certes | Dëgg-dëgg | — | Particule d'insistance
+103:2:2 | l'être humain | doomu-aadama | ا ن س |
+103:2:3 | est bien dans | dafa nekk ci | — | لَـ (insistance) + فِي (dans)
+103:2:4 | une perte | lor | خ س ر |
+103:3:1 | sauf | lu dul | — | إِلَّا : sauf, excepté
+103:3:2 | ceux qui | ñi | — |
+103:3:3 | ont cru | gëm | ا م ن | Verbe au passé, 3e pers. du pluriel (ـُوا = ils)
+103:3:4 | et ont accompli | te def | ع م ل | وَ + عَمِلُوا
+103:3:5 | les bonnes œuvres | jëf yu baax yi | ص ل ح |
+103:3:6 | et se sont recommandé | te digalante | و ص ي | Forme VI : action réciproque
+103:3:7 | la vérité | ci dëgg | ح ق ق | بِ + الحَقّ
+103:3:8 | et se sont recommandé | te digalante | و ص ي |
+103:3:9 | la patience | ci muñ | ص ب ر | بِ + الصَّبْر
+
+# ── 105. Al-Fîl ──
+105:1:1 | N'… pas ? | Ndax …ul ? | — | أَ (est-ce que) + لَمْ (ne… pas, passé)
+105:1:2 | as-tu vu | nga gis | ر ا ي |
+105:1:3 | comment | naka | ك ي ف |
+105:1:4 | a agi | la def | ف ع ل |
+105:1:5 | ton Seigneur | sa Boroom | ر ب ب | رَبّ + كَ (ton)
+105:1:6 | envers les gens | ak waa | ص ح ب | بِ + أَصْحَاب (compagnons, gens de)
+105:1:7 | de l'Éléphant | ñey wi | ف ي ل |
+105:2:1 | N'… pas ? | Ndax …ul ? | — |
+105:2:2 | a-t-Il rendu | mu def | ج ع ل |
+105:2:3 | leur ruse | seen pexe | ك ي د | كَيْد + هُمْ (leur)
+105:2:4 | dans | ci | — |
+105:2:5 | l'échec | neen | ض ل ل |
+105:3:1 | et Il a envoyé | te mu yónni | ر س ل | وَ + أَرْسَلَ
+105:3:2 | sur eux | ci seen kaw | — |
+105:3:3 | des oiseaux | ay picc | ط ي ر |
+105:3:4 | par volées | mbooloo-mbooloo | — |
+105:4:1 | leur lançant | di leen sànni | ر م ي | Verbe au présent + هِمْ (eux)
+105:4:2 | des pierres | ay doj | ح ج ر | بِ + حِجَارَة
+105:4:3 | de | ci | — |
+105:4:4 | argile cuite | ban bu lakk | س ج ل |
+105:5:1 | et Il les a rendus | mu def leen | ج ع ل | فَ (alors) + جَعَلَ + هُمْ
+105:5:2 | comme de la paille | ni ñax | ع ص ف | كَ (comme) + عَصْف
+105:5:3 | mâchée | mu ñu lekk | ا ك ل | Participe passif : mangé
+
+# ── 106. Quraysh ──
+106:1:1 | À cause du pacte | Ndax miin gi | ا ل ف | لِ (pour, à cause de) + إِيلَاف
+106:1:2 | des Quraysh | Kurays | ق ر ش | Tribu de La Mecque
+106:2:1 | leur pacte | seen miin | ا ل ف |
+106:2:2 | (pour) le voyage | tukki | ر ح ل |
+106:2:3 | d'hiver | jamonoy sedd | ش ت و |
+106:2:4 | et d'été | ak jamonoy tàng | ص ي ف |
+106:3:1 | Qu'ils adorent donc | Nañu jaamu | ع ب د | فَ + لِـ (qu'ils…) + يَعْبُدُوا
+106:3:2 | (le) Seigneur | Boroom | ر ب ب |
+106:3:3 | de cette | gii | — | Démonstratif : ce, cette
+106:3:4 | Maison (la Kaaba) | kër | ب ي ت |
+106:4:1 | Celui qui | Ki | — |
+106:4:2 | les a nourris | leen dundal | ط ع م | Forme IV + هُمْ (eux)
+106:4:3 | contre | ci | — |
+106:4:4 | la faim | xiif | ج و ع |
+106:4:5 | et les a rassurés | te leen aar | ا م ن | وَ + آمَنَ + هُمْ
+106:4:6 | de | ci | — |
+106:4:7 | la peur | tiit | خ و ف |
+
+# ── 107. Al-Mâ'ûn ──
+107:1:1 | As-tu vu | Ndax gis nga | ر ا ي | أَ (est-ce que) + رَأَيْتَ
+107:1:2 | celui qui | ki | — |
+107:1:3 | dément | di weddi | ك ذ ب | Forme II : traiter de mensonge
+107:1:4 | la Rétribution | àtte bi | د ي ن | بِ + الدِّين
+107:2:1 | C'est donc lui | Kooku nag | — | فَ + ذَٰلِكَ (celui-là)
+107:2:2 | qui | ki | — |
+107:2:3 | repousse | di dàq | د ع ع |
+107:2:4 | l'orphelin | jirim ji | ي ت م |
+107:3:1 | et n'… pas | te du | — |
+107:3:2 | encourage | xiir | ح ض ض |
+107:3:3 | à | ci | — |
+107:3:4 | nourrir | ñam | ط ع م |
+107:3:5 | le pauvre | ndóol | س ك ن |
+107:4:1 | Malheur donc | Kon toskare | و ي ل | فَ + وَيْل
+107:4:2 | à ceux qui prient | ñeel ñiy julli | ص ل و | لِ + المُصَلِّين
+107:5:1 | ceux qui | ñi | — |
+107:5:2 | eux | ñoom | — |
+107:5:3 | de | ci | — |
+107:5:4 | leur prière | seen julli | ص ل و | صَلَاة + هِمْ (leur)
+107:5:5 | sont négligents | di sàggane | س ه و |
+107:6:1 | ceux qui | ñi | — |
+107:6:2 | eux | ñoom | — |
+107:6:3 | font de l'ostentation | di wone | ر ا ي | Forme III : se faire voir
+107:7:1 | et refusent | te di tere | م ن ع | وَ + يَمْنَعُونَ
+107:7:2 | l'ustensile (la petite aide) | jumtukaay yi | م ع ن |
+
+# ── 108. Al-Kawthar ──
+108:1:1 | Certes Nous | Dëgg-dëgg Nun | — | إِنَّ + نَا (nous)
+108:1:2 | t'avons donné | jox nanu la | ع ط و | Forme IV, passé + كَ (toi)
+108:1:3 | l'Abondance (al-Kawthar) | Kawsar bi | ك ث ر | Aussi : un fleuve du Paradis
+108:2:1 | Prie donc | Kon julli | ص ل و | فَ + impératif صَلِّ
+108:2:2 | pour ton Seigneur | ngir sa Boroom | ر ب ب | لِ + رَبّ + كَ
+108:2:3 | et sacrifie | te rendi | ن ح ر | وَ + impératif
+108:3:1 | Certes | Dëgg-dëgg | — |
+108:3:2 | celui qui te hait | ki la bañ | ش ن ا | Participe actif + كَ (toi)
+108:3:3 | c'est lui | moom | — |
+108:3:4 | le sans-postérité | ki amul ndono | ب ت ر |
+
+# ── 109. Al-Kâfirûn ──
+109:1:1 | Dis | Neel | ق و ل | Impératif de قَالَ (dire)
+109:1:2 | Ô vous | Éy yeen | — | Particule d'appel يَا + أَيُّهَا
+109:1:3 | les mécréants | yéefar yi | ك ف ر |
+109:2:1 | Je n'… pas | Duma | — | لَا : négation du présent
+109:2:2 | adore | jaamu | ع ب د | 1re pers. du singulier (أَ = je)
+109:2:3 | ce que | li | — |
+109:2:4 | vous adorez | ngeen di jaamu | ع ب د | 2e pers. du pluriel
+109:3:1 | Et… pas | Te du | — |
+109:3:2 | vous | yeen | — |
+109:3:3 | (n'êtes) adorateurs | jaamukat | ع ب د | Participe actif pluriel
+109:3:4 | de ce que | li | — |
+109:3:5 | j'adore | maa ngi jaamu | ع ب د |
+109:4:1 | Et… pas | Te du | — |
+109:4:2 | moi | man | — |
+109:4:3 | (je ne suis) adorateur | jaamukat | ع ب د |
+109:4:4 | de ce que | li | — |
+109:4:5 | vous avez adoré | ngeen jaamu | ع ب د | Passé, 2e pers. du pluriel (ـتُمْ)
+109:5:1 | Et… pas | Te du | — |
+109:5:2 | vous | yeen | — |
+109:5:3 | (n'êtes) adorateurs | jaamukat | ع ب د |
+109:5:4 | de ce que | li | — |
+109:5:5 | j'adore | maa ngi jaamu | ع ب د |
+109:6:1 | À vous | Ñeel na yeen | — | لَ (à) + كُمْ (vous)
+109:6:2 | votre religion | seen diine | د ي ن | دِين + كُمْ (votre)
+109:6:3 | et à moi | te ñeel na man | — | وَ + لِ + ي (moi)
+109:6:4 | ma religion | sama diine | د ي ن |
+
+# ── 110. An-Nasr ──
+110:1:1 | Lorsque | Su | — |
+110:1:2 | vient | ñëwee | ج ي ا |
+110:1:3 | le secours | ndimbal | ن ص ر |
+110:1:4 | d'Allah | Yàlla | ا ل ه |
+110:1:5 | et la victoire | ak ndam li | ف ت ح |
+110:2:1 | et que tu vois | te nga gis | ر ا ي |
+110:2:2 | les gens | nit ñi | ن و س |
+110:2:3 | entrer | di dugg | د خ ل |
+110:2:4 | dans | ci | — |
+110:2:5 | la religion | diine | د ي ن |
+110:2:6 | d'Allah | Yàlla | ا ل ه |
+110:2:7 | en foule | mbooloo-mbooloo | ف و ج |
+110:3:1 | alors glorifie | kon màggal | س ب ح | فَ + impératif (forme II)
+110:3:2 | par la louange | ak cant | ح م د | بِ + حَمْد
+110:3:3 | de ton Seigneur | sa Boroom | ر ب ب |
+110:3:4 | et demande-Lui pardon | te ñaan ko njéggal | غ ف ر | Forme X + هُ (Lui)
+110:3:5 | Certes Il | Dëgg-dëgg Moom | — | إِنَّ + هُ (Lui)
+110:3:6 | est | mi ngi | ك و ن |
+110:3:7 | Celui qui accueille le repentir | Aji Nangu Tuub | ت و ب | Forme intensive فَعَّال
+
+# ── 111. Al-Masad ──
+111:1:1 | Que périssent | Na yàqu | ت ب ب |
+111:1:2 | les deux mains | ñaari loxo | ي د ي | Duel : deux mains
+111:1:3 | d'Abû | Abu | ا ب و | أَبُو : père de
+111:1:4 | Lahab | Lahab | ل ه ب | « Père de la flamme », oncle du Prophète ﷺ
+111:1:5 | et qu'il périsse | te mu yàqu | ت ب ب |
+111:2:1 | Ne… pas | Du | — | مَا : négation
+111:2:2 | a servi | jariñ | غ ن ي |
+111:2:3 | à lui | ko | — | عَنْ + هُ
+111:2:4 | sa fortune | alalam | م و ل | مَال + هُ (sa)
+111:2:5 | ni ce que | ak li | — |
+111:2:6 | il a acquis | mu dajale | ك س ب |
+111:3:1 | Il brûlera | Dina lakk | ص ل ي | سَـ (futur) + يَصْلَى
+111:3:2 | (dans) un Feu | ci safara | ن و ر |
+111:3:3 | plein de | bu am | — |
+111:3:4 | flammes | ay tàkk | ل ه ب |
+111:4:1 | ainsi que sa femme | ak jabaram | م ر ا | وَ + امْرَأَة + هُ (sa)
+111:4:2 | la porteuse | kiy yenu | ح م ل | Forme intensive
+111:4:3 | de bois | matt | ح ط ب |
+111:5:1 | À | Ci | — |
+111:5:2 | son cou | baatam | ج ي د | جِيد + هَا (son, à elle)
+111:5:3 | une corde | buum | ح ب ل |
+111:5:4 | de | ci | — |
+111:5:5 | fibres (de palmier) | lu ñu ràbb | م س د |
+
+# ── 112. Al-Ikhlâs ──
+112:1:1 | Dis | Neel | ق و ل |
+112:1:2 | Il est | Moom | — |
+112:1:3 | Allah | Yàlla | ا ل ه |
+112:1:4 | Unique | Benn | ا ح د |
+112:2:1 | Allah | Yàlla | ا ل ه |
+112:2:2 | le Seul imploré | Ki ñépp wéeru | ص م د | Celui dont tous ont besoin
+112:3:1 | Il n'a pas | Mu …ul | — | لَمْ : négation au passé
+112:3:2 | engendré | jur | و ل د |
+112:3:3 | et n'a pas | te …ul | — |
+112:3:4 | été engendré | ñu jur ko | و ل د | Forme passive
+112:4:1 | Et n'… pas | Te amul | — |
+112:4:2 | il y a | am | ك و ن |
+112:4:3 | à Lui | ci Moom | — | لَ + هُ (Lui)
+112:4:4 | égal | ku ko yem | ك ف ا |
+112:4:5 | personne | kenn | ا ح د |
+
+# ── 113. Al-Falaq ──
+113:1:1 | Dis | Neel | ق و ل |
+113:1:2 | je cherche protection | damay sàkku kaaraange | ع و ذ | 1re pers. (أَ = je)
+113:1:3 | auprès du Seigneur | ci Boroom | ر ب ب | بِ + رَبّ
+113:1:4 | de l'aube | fajar gi | ف ل ق |
+113:2:1 | contre | ci | — |
+113:2:2 | le mal | lu bon | ش ر ر |
+113:2:3 | de ce qu' | li | — |
+113:2:4 | Il a créé | mu sàkk | خ ل ق |
+113:3:1 | et contre | ak ci | — |
+113:3:2 | le mal | lu bon | ش ر ر |
+113:3:3 | de l'obscurité | lëndëm | غ س ق |
+113:3:4 | quand | bu | — |
+113:3:5 | elle s'étend | mu dal | و ق ب |
+113:4:1 | et contre | ak ci | — |
+113:4:2 | le mal | lu bon | ش ر ر |
+113:4:3 | de celles qui soufflent | ñiy tëf | ن ف ث |
+113:4:4 | sur | ci | — |
+113:4:5 | les nœuds | fas yi | ع ق د |
+113:5:1 | et contre | ak ci | — |
+113:5:2 | le mal | lu bon | ش ر ر |
+113:5:3 | de l'envieux | ku kiñaan | ح س د |
+113:5:4 | quand | bu | — |
+113:5:5 | il envie | mu kiñaan | ح س د |
+
+# ── 114. An-Nâs ──
+114:1:1 | Dis | Neel | ق و ل |
+114:1:2 | je cherche protection | damay sàkku kaaraange | ع و ذ |
+114:1:3 | auprès du Seigneur | ci Boroom | ر ب ب |
+114:1:4 | des hommes | nit ñi | ن و س |
+114:2:1 | (Le) Roi | Buur | م ل ك |
+114:2:2 | des hommes | nit ñi | ن و س |
+114:3:1 | (Le) Dieu | Yàlla | ا ل ه | إِلَٰه : divinité, celui qu'on adore
+114:3:2 | des hommes | nit ñi | ن و س |
+114:4:1 | contre | ci | — |
+114:4:2 | le mal | lu bon | ش ر ر |
+114:4:3 | du tentateur | kiy jaxase xel | و س و س |
+114:4:4 | furtif | kiy nëbbu | خ ن س |
+114:5:1 | qui | ki | — |
+114:5:2 | souffle le mal | di sotti xalaat yu bon | و س و س |
+114:5:3 | dans | ci | — |
+114:5:4 | les poitrines | dënn | ص د ر | Pluriel de صَدْر
+114:5:5 | des hommes | nit ñi | ن و س |
+114:6:1 | parmi | ci | — |
+114:6:2 | les djinns | jinne yi | ج ن ن |
+114:6:3 | et les hommes | ak nit ñi | ن و س |
