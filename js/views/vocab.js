@@ -7,9 +7,17 @@ import { getState, update, settings, logActivity } from '../store.js';
 import { play } from '../audio.js';
 import { openWordSheet, glossLines, quiz, meaningQuestions, rootHref, audioButton } from '../components.js';
 import { refresh } from '../nav.js';
+import { GRAMMAR } from '../data/grammar.js';
 
 export function hubView() {
   const s = stats();
+  const g = getState().progress.grammar || {};
+  const nahw = GRAMMAR.filter((l) => l.kind === 'nahw');
+  const sarf = GRAMMAR.filter((l) => l.kind === 'sarf');
+  const doneOf = (list) => list.filter((l) => g[l.id] !== undefined).length;
+  const userWords = Object.keys(getState().userDict || {}).length;
+  const tile = (href, ic, title, sub, accent) => h('a', { class: 'tile', href },
+    h('span', { class: `tile-icon ${accent ? 'accent' : ''}` }, icon(ic)), h('span', { class: 'title' }, title), h('span', { class: 'sub' }, sub));
   const node = h('div', null,
     h('div', { class: 'card' },
       h('div', { class: 'stat-row' },
@@ -19,7 +27,13 @@ export function hubView() {
       h('a', { class: `btn block ${s.due ? 'primary' : ''}`, href: '#/mots/revision', style: { marginTop: '12px' } },
         icon('cards'), s.due ? `Réviser maintenant (${s.due})` : 'Aucune révision pour le moment'),
       !s.total ? h('p', { class: 'small muted', style: { marginTop: '8px' } }, 'Commencez une leçon ci-dessous ou ajoutez des mots depuis une sourate : ils apparaîtront ici au bon moment.') : null),
-    h('div', { class: 'section-title' }, 'Leçons : les mots les plus fréquents'),
+    h('div', { class: 'section-title' }, 'La méthode'),
+    h('div', { class: 'grid-2' },
+      tile('#/grammaire', 'grid', 'Grammaire', `${doneOf(nahw)}/${nahw.length} leçons`),
+      tile('#/grammaire/s1', 'list', 'Conjugaison', `${doneOf(sarf)}/${sarf.length} leçons`),
+      tile('#/conjugaison', 'repeat', 'Conjugueur', '50 verbes du Coran', true),
+      tile('#/conjugaison/exercice', 'star', 'Exercice', 'Conjuguer sans se tromper', true)),
+    h('div', { class: 'section-title' }, 'Vocabulaire : 20 leçons'),
     h('ul', { class: 'list' }, LESSONS.map((l, i) => {
       const ids = lessonWordIds(l.id);
       const n = ids.filter(hasCard).length;
@@ -31,9 +45,9 @@ export function hubView() {
     h('div', { class: 'section-title' }, 'Explorer'),
     h('div', { class: 'list' },
       h('a', { class: 'list-item', href: '#/mots/racines' }, h('span', { style: { color: 'var(--primary)' } }, icon('root')), h('span', { class: 'grow' }, h('div', { class: 'title' }, 'Les racines'), h('div', { class: 'sub' }, 'Trois lettres, une famille de mots')), icon('next', 'chev')),
-      h('a', { class: 'list-item', href: '#/mots/mes-mots' }, h('span', { style: { color: 'var(--primary)' } }, icon('list')), h('span', { class: 'grow' }, h('div', { class: 'title' }, 'Mes mots'), h('div', { class: 'sub' }, `${s.total} mot${s.total > 1 ? 's' : ''} en révision`)), icon('next', 'chev'))),
+      h('a', { class: 'list-item', href: '#/mots/mes-mots' }, h('span', { style: { color: 'var(--primary)' } }, icon('list')), h('span', { class: 'grow' }, h('div', { class: 'title' }, 'Mes mots'), h('div', { class: 'sub' }, `${s.total} mot${s.total > 1 ? 's' : ''} en révision${userWords ? ` • ${userWords} dans mon dictionnaire` : ''}`)), icon('next', 'chev'))),
   );
-  return { title: 'Mots', node, keepScroll: true };
+  return { title: 'Langue', node, keepScroll: true };
 }
 
 export function lessonView({ id }) {
@@ -165,7 +179,7 @@ export function rootView({ root }) {
   const words = wordsOfRoot(root);
   if (!words.length) return null;
   const node = h('div', null,
-    h('div', { class: 'card center' }, ar(root, 'ar-xl'), h('p', { class: 'muted' }, `${words.length} forme${words.length > 1 ? 's' : ''} dans DAGAN`)),
+    h('div', { class: 'card center' }, ar(root, 'ar-xl'), h('p', { class: 'muted' }, `${words.length} forme${words.length > 1 ? 's' : ''} dans Daaraji`)),
     h('ul', { class: 'list', style: { marginTop: '12px' } }, words.map((w) => h('li', null,
       h('button', { class: 'list-item', type: 'button', on: { click: () => openWordSheet(w.ids[0], { onChange: refresh }) } },
         h('span', { style: { minWidth: '92px', textAlign: 'center' } }, ar(w.ar, 'ar-m')),

@@ -1,4 +1,4 @@
-# Gloses mot à mot des sourates de DAGAN
+# Gloses mot à mot des sourates de Daaraji
 # Format : référence (sourate:verset:mot) | français | wolof (alphabet latin CLAD) | racine | note de grammaire
 # Le wolofal est généré automatiquement à partir de la colonne wolof.
 # Les traductions wolof sont À VÉRIFIER : corrigez-les ici ou dans l'application (bouton « Corriger »).

@@ -9,13 +9,15 @@ import * as reading from './views/reading.js';
 import * as quran from './views/quran.js';
 import * as vocab from './views/vocab.js';
 import * as settingsViews from './views/settings.js';
+import * as library from './views/library.js';
+import * as method from './views/method.js';
 
 const TABS = [
-  { href: '#/', label: 'Accueil', icon: 'home', match: (p) => p === '/' },
+  { href: '#/', label: 'Accueil', icon: 'home', match: (p) => p === '/' || p.startsWith('/reglages') || p.startsWith('/apropos') },
   { href: '#/lecture', label: 'Lecture', icon: 'read', match: (p) => p.startsWith('/lecture') },
   { href: '#/coran', label: 'Coran', icon: 'quran', match: (p) => p.startsWith('/coran') },
-  { href: '#/mots', label: 'Mots', icon: 'cards', match: (p) => p.startsWith('/mots') },
-  { href: '#/reglages', label: 'Réglages', icon: 'settings', match: (p) => p.startsWith('/reglages') || p.startsWith('/apropos') },
+  { href: '#/livres', label: 'Livres', icon: 'book', match: (p) => p.startsWith('/livres') },
+  { href: '#/mots', label: 'Langue', icon: 'cards', match: (p) => p.startsWith('/mots') || p.startsWith('/grammaire') || p.startsWith('/conjugaison') },
 ];
 
 // Table des routes : motif -> fonction de vue. Une vue renvoie { title, node, back?, actions?, cleanup? }.
@@ -41,6 +43,16 @@ const ROUTES = [
   ['/mots/racines', vocab.rootsView],
   ['/mots/racine/:root', vocab.rootView],
   ['/mots/mes-mots', vocab.myWordsView],
+  ['/livres', library.libraryView],
+  ['/livres/:book', library.bookView],
+  ['/livres/:book/:chapter', library.chapterView],
+  ['/livres/:book/:chapter/quiz', library.chapterQuizView],
+  ['/grammaire', method.grammarListView],
+  ['/grammaire/:id', method.grammarLessonView],
+  ['/grammaire/:id/quiz', method.grammarQuizView],
+  ['/conjugaison', method.conjugationListView],
+  ['/conjugaison/exercice', method.conjugationDrillView],
+  ['/conjugaison/verbe/:id', method.verbView],
   ['/reglages', settingsViews.settingsView],
   ['/apropos', settingsViews.aboutView],
 ];
@@ -106,8 +118,8 @@ function render() {
     result = { title: 'Page introuvable', back: '#/', node: h('div', { class: 'empty' }, h('p', null, 'Cette page n’existe pas.'), h('a', { class: 'btn primary', href: '#/' }, 'Retour à l’accueil')) };
   }
   current = { path, cleanup: result.cleanup };
-  titleEl.textContent = result.title || 'DAGAN';
-  document.title = result.title ? `${result.title} · DAGAN` : 'DAGAN – L’arabe du Coran';
+  titleEl.textContent = result.title || 'Daaraji';
+  document.title = result.title ? `${result.title} · Daaraji` : 'Daaraji – L’arabe du Coran';
   backBtn.hidden = !result.back;
   backBtn.dataset.href = result.back || '';
   clear(actionsEl);
@@ -142,7 +154,7 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
     });
     navigator.serviceWorker.register('./sw.js').then((reg) => {
       const offerUpdate = (worker) => {
-        toast('Une nouvelle version de DAGAN est prête.', { action: 'Mettre à jour', onAction: () => worker.postMessage('skipWaiting') });
+        toast('Une nouvelle version de Daaraji est prête.', { action: 'Mettre à jour', onAction: () => worker.postMessage('skipWaiting') });
       };
       if (reg.waiting && navigator.serviceWorker.controller) offerUpdate(reg.waiting);
       reg.addEventListener('updatefound', () => {

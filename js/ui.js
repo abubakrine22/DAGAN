@@ -40,12 +40,13 @@ export function wolofalEl(text, cls = '') {
   return h('span', { class: `wolofal ${cls}`, lang: 'wo-Arab', dir: 'rtl' }, text);
 }
 
-// ── Icônes (tracés simples dessinés pour DAGAN) ──
+// ── Icônes (tracés simples dessinés pour Daaraji) ──
 const PATHS = {
   home: 'M3 11 12 3l9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z',
   read: 'M4 6V4h16v2M12 4v16M8 20h8',
   quran: 'M12 6.5C10 5 7 4.5 3 5v14c4-.5 7 0 9 1.5 2-1.5 5-2 9-1.5V5c-4-.5-7 0-9 1.5zM12 6.5V20.5',
   cards: 'M7 3h12a2 2 0 0 1 2 2v12M3 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z',
+  book: 'M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5zM5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3M9 7h6',
   settings: 'M4 7h9M17 7h3M4 17h3M11 17h9M15 5v4M9 15v4',
   back: 'M15 5l-7 7 7 7',
   next: 'M9 5l7 7-7 7',

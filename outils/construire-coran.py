@@ -107,7 +107,7 @@ def main():
         "// Fichier généré par outils/construire-coran.py — ne pas modifier à la main.\n"
         "// Texte uthmani et traduction française de Muhammad Hamidullah : QuranEnc\n"
         "// (via le paquet quran-json, CC BY-SA 4.0). Translittération mot à mot : quran.com.\n"
-        "// Gloses wolof : DAGAN (à vérifier).\n"
+        "// Gloses wolof : Daaraji (à vérifier).\n"
     )
     SORTIE.parent.mkdir(parents=True, exist_ok=True)
     SORTIE.write_text(

@@ -1,0 +1,392 @@
+# Structure des livres de Daaraji : chapitres et vocabulaire clé.
+# « ## livre » commence un livre ; « # identifiants | titre français | titre arabe » commence un chapitre ;
+# « - arabe | français | wolof | racine » ajoute un mot de vocabulaire au chapitre.
+# Les mots wolof sont à vérifier.
+
+## qawaid
+# Q001-Q005 | Introduction : le culte pur et le danger de l’association | المُقَدِّمَة
+- الحَنِيفِيَّة | le hanîfisme (culte pur d’Abraham) | diine ju sell | ح ن ف
+- التَّوْحِيد | l’unicité d’Allah | benneel Yàlla | و ح د
+- الشِّرْك | l’association (à Allah) | bokkaale Yàlla | ش ر ك
+- العِبَادَة | l’adoration | jaamu | ع ب د
+- مُخْلِص | sincère | ku sell xol | خ ل ص
+- الطَّهَارَة | la purification | set | ط ه ر
+# Q006 | Première règle | القَاعِدَةُ الأُولَى
+- الكُفَّار | les mécréants | yéefar yi | ك ف ر
+- الخَالِق | le Créateur | Aji Sàkk | خ ل ق
+- المُدَبِّر | Celui qui règle toute chose | Ki yor mbir yi | د ب ر
+- يَرْزُقُ | Il nourrit, accorde la subsistance | may na dundin | ر ز ق
+# Q007-Q010 | Deuxième règle : le rapprochement et l’intercession | القَاعِدَةُ الثَّانِيَة
+- القُرْبَة | le rapprochement | jege | ق ر ب
+- الشَّفَاعَة | l’intercession | ñaanal | ش ف ع
+- أَوْلِيَاء | protecteurs, alliés | waliyu yi | و ل ي
+- إِذْن | permission | ndigal | ا ذ ن
+# Q011-Q017 | Troisième règle | القَاعِدَةُ الثَّالِثَة
+- المَلَائِكَة | les anges | malaaka yi | م ل ك
+- الأَنْبِيَاء | les prophètes | yonent yi | ن ب ا
+- الصَّالِحُون | les vertueux | ñu baax ñi | ص ل ح
+- الأَشْجَار | les arbres | garab yi | ش ج ر
+- الأَحْجَار | les pierres | doj yi | ح ج ر
+# Q018-Q019 | Quatrième règle | القَاعِدَةُ الرَّابِعَة
+- الرَّخَاء | l’aisance | yaatu | ر خ و
+- الشِّدَّة | l’adversité | metit | ش د د
+- الفُلْك | le bateau | gaal gi | ف ل ك
+- البَرّ | la terre ferme | jéeri | ب ر ر
+
+## usul
+# U001-U009 | Les quatre questions | المَسَائِلُ الأَرْبَع
+- العِلْم | la science | xam-xam | ع ل م
+- العَمَل | la mise en pratique | jëf | ع م ل
+- الدَّعْوَة | l’appel (à l’islam) | woo | د ع و
+- الصَّبْر | la patience | muñ | ص ب ر
+- الأَذَى | le tort, la nuisance | lor | ا ذ ي
+- الدَّلِيل | la preuve | firnde | د ل ل
+# U010-U013 | Les trois questions | المَسَائِلُ الثَّلَاث
+- رَزَقَنَا | Il nous a donné la subsistance | may na nu dundin | ر ز ق
+- أَطَاعَ | il a obéi | déggal na | ط و ع
+- عَصَى | il a désobéi | moy na | ع ص ي
+- المَسَاجِد | les mosquées | jàkka yi | س ج د
+# U014-U015 | Le culte pur et le tawhîd | الحَنِيفِيَّة وَالتَّوْحِيد
+- إِفْرَاد | réserver à un seul | ñeel kenn rekk | ف ر د
+- أَمَرَ | il a ordonné | digle na | ا م ر
+- نَهَى | il a interdit | tere na | ن ه ي
+- لَا تُشْرِكُوا | n’associez pas | buleen bokkaale | ش ر ك
+# U016-U018 | Les trois fondements : qui est ton Seigneur ? | الأُصُولُ الثَّلَاثَة
+- الأُصُول | les fondements | cëslaay yi | ا ص ل
+- رَبِّي | mon Seigneur | sama Boroom | ر ب ب
+- مَعْبُود | adoré | li ñuy jaamu | ع ب د
+- العَالَمِين | les mondes | àddina yépp | ع ل م
+# U019-U021 | Comment connaître son Seigneur | بِمَ عَرَفْتَ رَبَّكَ
+- آيَات | signes | firnde yi | ا ي ي
+- مَخْلُوقَات | créatures | mbindeef yi | خ ل ق
+- اللَّيْل | la nuit | guddi | ل ي ل
+- النَّهَار | le jour | bëccëg | ن ه ر
+- السَّمَاوَات | les cieux | asamaan yi | س م و
+# U022-U035 | Les formes d’adoration et leurs preuves | أَنْوَاعُ العِبَادَة
+- الدُّعَاء | l’invocation | ñaan | د ع و
+- الخَوْف | la crainte | ragal | خ و ف
+- الرَّجَاء | l’espoir | yaakaar | ر ج و
+- التَّوَكُّل | la confiance (en Allah) | wóolu | و ك ل
+- الاسْتِعَانَة | demander l’aide | ñaan ndimbal | ع و ن
+- الاسْتِعَاذَة | demander protection | sàkku kaaraange | ع و ذ
+- الذَّبْح | le sacrifice | rendi | ذ ب ح
+- النَّذْر | le vœu | dige ak Yàlla | ن ذ ر
+# U036-U046 | Deuxième fondement : l’islam et ses piliers | الأَصْلُ الثَّانِي
+- الإِسْلَام | l’islam, la soumission | lislaam | س ل م
+- أَرْكَان | piliers | kenu yi | ر ك ن
+- الشَّهَادَة | l’attestation | seede | ش ه د
+- الزَّكَاة | l’aumône légale | asaka | ز ك و
+- الصِّيَام | le jeûne | koor | ص و م
+- الحَجّ | le pèlerinage | aj | ح ج ج
+# U047-U049 | La foi et ses piliers | الإِيمَان
+- الإِيمَان | la foi | ngëm | ا م ن
+- شُعْبَة | branche | car | ش ع ب
+- الحَيَاء | la pudeur | kersa | ح ي ي
+- كُتُب | livres | téere yi | ك ت ب
+- القَدَر | le destin | dogal | ق د ر
+# U050-U052 | L’excellence et le hadith de Gabriel | الإِحْسَان
+- الإِحْسَان | l’excellence | rafetal jëf | ح س ن
+- رُكْن | pilier | kenu | ر ك ن
+- يَرَاكَ | Il te voit | Mu ngi lay gis | ر ا ي
+- السَّاعَة | l’Heure (fin du monde) | bésu àllaxira | س و ع
+# U053-U056 | Troisième fondement : le Prophète ﷺ | الأَصْلُ الثَّالِث
+- النُّبُوَّة | la prophétie | yonent-gi | ن ب ا
+- مَكَّة | La Mecque | Makka |
+- أَنْذِرْ | avertis | artu | ن ذ ر
+- الأَصْنَام | les idoles | xërëm yi | ص ن م
+# U057-U061 | L’émigration et Médine | الهِجْرَة
+- الهِجْرَة | l’émigration | gàddaay | ه ج ر
+- المَدِينَة | Médine | Madiina | م د ن
+- فَرِيضَة | obligation | farata | ف ر ض
+- التَّوْبَة | le repentir | tuub | ت و ب
+# U062-U068 | Sa mission, sa mort et la résurrection | البَعْثُ وَالحِسَاب
+- البَعْث | la résurrection | dekki | ب ع ث
+- مُحَاسَبُون | qui rendront des comptes | dinañu leen lim | ح س ب
+- مَيِّت | mort (adjectif) | ku dee | م و ت
+- كَذَّبَ | il a démenti | weddi na | ك ذ ب
+# U069-U076 | Les messagers et le tâghût | الرُّسُلُ وَالطَّاغُوت
+- مُبَشِّرِين | annonciateurs de bonne nouvelle | yéglekat xibaar bu neex | ب ش ر
+- مُنْذِرِين | avertisseurs | artukat | ن ذ ر
+- خَاتَم | le sceau, le dernier | ki mujj | خ ت م
+- الطَّاغُوت | le tâghût (ce qu’on adore en dehors d’Allah) | li ñuy jaamu lu dul Yàlla | ط غ ي
+
+## akhdari
+# A001-A006 | Les devoirs de la personne responsable | مَا يَجِبُ عَلَى المُكَلَّف
+- المُكَلَّف | la personne responsable | ku war | ك ل ف
+- التَّوْبَة | le repentir | tuub | ت و ب
+- النَّدَم | le regret | réccu | ن د م
+- ذَنْب | péché | bàkkaar | ذ ن ب
+- لِسَان | langue | lammiñ | ل س ن
+- الكَذِب | le mensonge | fen | ك ذ ب
+- الغِيبَة | la médisance | jëw | غ ي ب
+- العُلَمَاء | les savants | boroom xam-xam yi | ع ل م
+# A007-A009 | La purification | الطَّهَارَة
+- الطَّهَارَة | la purification | set | ط ه ر
+- النَّجَاسَة | la souillure | tilim | ن ج س
+- المَاء | l’eau | ndox | م و ه
+- الثَّوْب | le vêtement | yére | ث و ب
+- شَكَّ | il a douté | am na xel ñaar | ش ك ك
+- غُسِلَ | il a été lavé | dañu ko raxas | غ س ل
+# A010-A012 | Les ablutions (wudû’) | الوُضُوء
+- الوُضُوء | les ablutions | njàpp | و ض ا
+- النِّيَّة | l’intention | yéene | ن و ي
+- الوَجْه | le visage | kanam | و ج ه
+- اليَدَيْن | les deux mains | ñaari loxo | ي د ي
+- الرَّأْس | la tête | bopp | ر ا س
+- الرِّجْلَيْن | les deux pieds | ñaari tànk | ر ج ل
+- السُّنَن | les sunnas | sunna yi | س ن ن
+# A013-A014 | Ce qui annule les ablutions | نَوَاقِضُ الوُضُوء
+- نَوَاقِض | ce qui annule | li tas njàpp | ن ق ض
+- البَوْل | l’urine | saw | ب و ل
+- النَّوْم | le sommeil | nelaw | ن و م
+- الإِغْمَاء | l’évanouissement | xëm | غ م ي
+- المُصْحَف | l’exemplaire du Coran | téereb Alxuraan | ص ح ف
+- اللَّوْح | la planchette (alluwa) | àlluwa | ل و ح
+# A015-A020 | Le grand lavage (ghusl) | الغُسْل
+- الغُسْل | le grand lavage | sangu set | غ س ل
+- الجَنَابَة | l’état de janâba | janaaba | ج ن ب
+- المَسْجِد | la mosquée | jàkka | س ج د
+- قِرَاءَة | lecture, récitation | jàng | ق ر ا
+- الجَسَد | le corps | yaram | ج س د
+# A021-A025 | Les ablutions sèches (tayammum) | التَّيَمُّم
+- التَّيَمُّم | les ablutions sèches | tayamum | ا م م
+- المُسَافِر | le voyageur | tukkikat | س ف ر
+- المَرِيض | le malade | ku feebar | م ر ض
+- الصَّعِيد | la surface naturelle pure | suuf su set | ص ع د
+- التُّرَاب | la terre | suuf | ت ر ب
+# A026-A029 | Les menstrues et les lochies | الحَيْضُ وَالنِّفَاس
+- الحَيْض | les menstrues | jigéen ji am ay weeram | ح ي ض
+- النِّفَاس | les lochies | deretu wasin | ن ف س
+- الدَّم | le sang | deret | د م ي
+- القَضَاء | le rattrapage | fey | ق ض ي
+# A030-A031 | Les heures de prière | الأَوْقَات
+- الوَقْت | l’heure | waxtu | و ق ت
+- الظُّهْر | la prière de Dhuhr | Tisbaar | ظ ه ر
+- العَصْر | la prière de l’Asr | Takusaan | ع ص ر
+- المَغْرِب | la prière du Maghrib | Timis | غ ر ب
+- العِشَاء | la prière de l’Ichâ | Gee | ع ش و
+- الصُّبْح | la prière du Sobh | Fajar | ص ب ح
+# A032-A033 | Les conditions de la prière | شُرُوطُ الصَّلَاة
+- شُرُوط | conditions | sarti yi | ش ر ط
+- العَوْرَة | la nudité (à couvrir) | yaram wi war a muur | ع و ر
+- القِبْلَة | la qibla | qibla | ق ب ل
+- الكَلَام | la parole | wax | ك ل م
+- سَتْر | le fait de couvrir | muur | س ت ر
+# A034-A038 | Obligations, sunnas et vertus de la prière | فَرَائِضُ الصَّلَاةِ وَسُنَنُهَا
+- فَرَائِض | obligations | farata yi | ف ر ض
+- الرُّكُوع | l’inclinaison | ruku | ر ك ع
+- السُّجُود | la prosternation | sujjóot | س ج د
+- الفَاتِحَة | la Fâtiha | Faatiha | ف ت ح
+- السَّلَام | le salut final | sàllaam | س ل م
+- التَّشَهُّد | le tachahhud | tachahhud | ش ه د
+# A039 | Le recueillement dans la prière | الخُشُوع
+- الخُشُوع | le recueillement | teey | خ ش ع
+- القَلْب | le cœur | xol | ق ل ب
+- نُور | lumière | leer | ن و ر
+- الشَّيْطَان | Satan | Seytaane | ش ط ن
+# A040-A041 | La prière du malade et le rattrapage | صَلَاةُ العَاجِزِ وَالقَضَاء
+- القِيَام | la station debout | taxaw | ق و م
+- الجُلُوس | la position assise | toog | ج ل س
+- العَاجِز | celui qui ne peut pas | ku manul | ع ج ز
+- النَّافِلَة | la prière surérogatoire | julli ju dul farata | ن ف ل
+- أَجْر | récompense | yool | ا ج ر
+# A042-A044 | La prosternation de l’oubli | السَّهْو
+- السَّهْو | l’oubli (dans la prière) | fàtte | س ه و
+- النُّقْصَان | le manque | wàññi | ن ق ص
+- الزِّيَادَة | l’ajout | yokk | ز ي د
+- الإِمَام | l’imam | imaam | ا م م
+- المَأْمُوم | celui qui suit l’imam | ku topp imaam | ا م م
+- رَكْعَة | rak‘a (unité de prière) | raka | ر ك ع
+
+## nawawi
+# N01
+- الأَعْمَال | les actes | jëf yi | ع م ل
+- النِّيَّات | les intentions | yéene yi | ن و ي
+- هِجْرَة | émigration | gàddaay | ه ج ر
+- امْرَأَة | femme | jigéen | م ر ا
+# N02
+- الإِسْلَام | l’islam | lislaam | س ل م
+- الإِيمَان | la foi | ngëm | ا م ن
+- الإِحْسَان | l’excellence | rafetal jëf | ح س ن
+- السَّاعَة | l’Heure | bésu àllaxira | س و ع
+# N03
+- بُنِيَ | a été bâti | tabax nañu ko | ب ن ي
+- خَمْس | cinq | juróom | خ م س
+- شَهَادَة | attestation | seede | ش ه د
+- حَجّ | pèlerinage | aj | ح ج ج
+# N04
+- مَلَك | ange | malaaka | م ل ك
+- رِزْق | subsistance | dundin | ر ز ق
+- أَجَل | terme (de la vie) | waxtu dee | ا ج ل
+- سَعِيد | heureux | ku am wërsëg | س ع د
+# N05
+- أَحْدَثَ | il a innové | sos na | ح د ث
+- أَمْر | affaire | mbir | ا م ر
+- رَدّ | rejeté | dees koy delloo | ر د د
+# N06
+- الحَلَال | le licite | lu dagan | ح ل ل
+- الحَرَام | l’illicite | lu araam | ح ر م
+- شُبُهَات | choses ambiguës | lu am xel ñaar | ش ب ه
+- القَلْب | le cœur | xol | ق ل ب
+- الجَسَد | le corps | yaram | ج س د
+# N07
+- الدِّين | la religion | diine | د ي ن
+- النَّصِيحَة | le bon conseil, la sincérité | digal bu baax | ن ص ح
+- أَئِمَّة | dirigeants | njiit yi | ا م م
+# N08
+- أُمِرْتُ | j’ai reçu l’ordre | dees na ma digal | ا م ر
+- دِمَاء | le sang (des personnes) | deret | د م ي
+- أَمْوَال | biens | alal | م و ل
+- حِسَاب | compte | lim | ح س ب
+# N09
+- نَهَيْتُكُمْ | je vous ai interdit | tere naa leen | ن ه ي
+- اسْتَطَعْتُمْ | vous avez pu | ngeen man | ط و ع
+- أَنْبِيَاء | prophètes | yonent yi | ن ب ا
+# N10
+- طَيِّب | bon, pur | baax, set | ط ي ب
+- السَّفَر | le voyage | tukki | س ف ر
+- السَّمَاء | le ciel | asamaan | س م و
+- يُسْتَجَابُ | être exaucé | nangu ñaan | ج و ب
+# N11
+- دَعْ | laisse | bàyyi | و د ع
+- يَرِيبُكَ | te fait douter | lay def xel ñaar | ر ي ب
+# N12
+- تَرْك | délaisser | bàyyi | ت ر ك
+- يَعْنِيهِ | le concerne | ñeel ko | ع ن ي
+# N13
+- يُؤْمِنُ | il a la foi | gëm na | ا م ن
+- يُحِبُّ | il aime | bëgg na | ح ب ب
+- أَخ | frère | mbokk | ا خ و
+- نَفْس | soi-même | bopp | ن ف س
+# N14
+- مُسْلِم | musulman | jullit | س ل م
+- النَّفْس | la vie (d’une personne) | bakkan | ن ف س
+- الجَمَاعَة | la communauté | mbooloo mi | ج م ع
+# N15
+- خَيْر | bien | lu baax | خ ي ر
+- يَصْمُتُ | il se tait | noppi | ص م ت
+- جَار | voisin | dëkkandoo | ج و ر
+- ضَيْف | hôte (invité) | gan | ض ي ف
+# N16
+- أَوْصِنِي | conseille-moi | digal ma | و ص ي
+- تَغْضَبْ | tu te mets en colère | nga mer | غ ض ب
+- مِرَارًا | plusieurs fois | ay yoon | م ر ر
+# N17
+- كَتَبَ | il a prescrit, écrit | bind na | ك ت ب
+- ذَبَحْتُمْ | vous avez égorgé | rendi ngeen | ذ ب ح
+- شَفْرَة | lame | paaka | ش ف ر
+# N18
+- اتَّقِ | crains (Allah) | ragalal | و ق ي
+- السَّيِّئَة | la mauvaise action | jëf ju bon | س و ا
+- الحَسَنَة | la bonne action | jëf ju baax | ح س ن
+- خُلُق | caractère | jikko | خ ل ق
+# N19
+- غُلَام | jeune garçon | xale bu góor | غ ل م
+- احْفَظْ | préserve | sàmm | ح ف ظ
+- الأُمَّة | la communauté | umma | ا م م
+- يُسْر | facilité | yomb | ي س ر
+# N20
+- الحَيَاء | la pudeur | kersa | ح ي ي
+- اصْنَعْ | fais | defal | ص ن ع
+- شِئْتَ | tu veux | nga bëgg | ش ي ا
+# N21
+- آمَنْتُ | j’ai cru | gëm naa | ا م ن
+- اسْتَقِمْ | sois droit | jubal | ق و م
+# N22
+- المَكْتُوبَات | les prières prescrites | julli farata yi | ك ت ب
+- أَحْلَلْتُ | j’ai tenu pour licite | jàppe naa lu dagan | ح ل ل
+- الجَنَّة | le Paradis | àjjana | ج ن ن
+# N23
+- الطُّهُور | la purification | set | ط ه ر
+- شَطْر | moitié | genn-wàll | ش ط ر
+- المِيزَان | la balance | miisaan | و ز ن
+- صَدَقَة | aumône | sarax | ص د ق
+# N24
+- الظُّلْم | l’injustice | tooñ | ظ ل م
+- عِبَادِي | Mes serviteurs | Samay jaam | ع ب د
+- ضَالّ | égaré | ku réer | ض ل ل
+- أَسْتَغْفِرُ | je demande pardon | maa ngi ñaan njéggal | غ ف ر
+# N25
+- الدُّثُور | les gens aisés | boroom alal yi | د ث ر
+- مَعْرُوف | le convenable | lu baax | ع ر ف
+- مُنْكَر | le blâmable | lu bon | ن ك ر
+- أَجْر | récompense | yool | ا ج ر
+# N26
+- تَعْدِلُ | tu établis la justice | nga àtte ci njub | ع د ل
+- خُطْوَة | pas | tamm | خ ط و
+- الطَّرِيق | le chemin | yoon | ط ر ق
+- الكَلِمَة | la parole | wax | ك ل م
+# N27
+- البِرّ | la piété | jëf ju baax | ب ر ر
+- الإِثْم | le péché | bàkkaar | ا ث م
+- صَدْر | poitrine | dënn | ص د ر
+- اطْمَأَنَّ | il s’est apaisé | dal na | ط م ن
+# N28
+- مَوْعِظَة | exhortation | waaz | و ع ظ
+- السَّمْع وَالطَّاعَة | écouter et obéir | déglu ak déggal | س م ع
+- بِدْعَة | innovation | bidaa | ب د ع
+- ضَلَالَة | égarement | réer | ض ل ل
+# N29
+- يُبَاعِدُنِي | m’éloigne | di ma sori | ب ع د
+- جُنَّة | bouclier | kaaraange | ج ن ن
+- لِسَان | langue | lammiñ | ل س ن
+- أَلْسِنَة | langues | lammiñ yi | ل س ن
+# N30
+- فَرَائِض | obligations | farata yi | ف ر ض
+- حُدُود | limites | kem yi | ح د د
+- رَحْمَة | miséricorde | yërmande | ر ح م
+# N31
+- ازْهَدْ | renonce | bàyyil | ز ه د
+- الدُّنْيَا | ce bas monde | àddina | د ن و
+- يُحِبَّكَ | (pour) qu’Il t’aime | mu bëgg la | ح ب ب
+# N32
+- ضَرَر | nuisance | lor | ض ر ر
+- ضِرَار | rendre le mal | feyu | ض ر ر
+# N33
+- البَيِّنَة | la preuve | firnde | ب ي ن
+- المُدَّعِي | le demandeur | ki laaj | د ع و
+- اليَمِين | le serment | ngiñ | ي م ن
+- أَنْكَرَ | il a nié | weddi na | ن ك ر
+# N34
+- مُنْكَر | le blâmable | lu bon | ن ك ر
+- يُغَيِّرْ | qu’il change | na ko soppi | غ ي ر
+- يَد | main | loxo | ي د ي
+- أَضْعَف | le plus faible | gën a néew doole | ض ع ف
+# N35
+- تَحَاسَدُوا | vous envier | kiñaanante | ح س د
+- تَبَاغَضُوا | vous haïr | bañante | ب غ ض
+- إِخْوَان | frères | mbokk yi | ا خ و
+- عِرْض | honneur | teraanga | ع ر ض
+# N36
+- كُرْبَة | détresse | coono | ك ر ب
+- يَسَّرَ | il a facilité | yombal na | ي س ر
+- سَتَرَ | il a couvert | muur na | س ت ر
+- السَّكِينَة | la sérénité | jàmm | س ك ن
+# N37
+- الحَسَنَات | les bonnes actions | jëf yu baax yi | ح س ن
+- السَّيِّئَات | les mauvaises actions | jëf yu bon yi | س و ا
+- هَمَّ | il a projeté | yéene na | ه م م
+- عَشْر | dix | fukk | ع ش ر
+# N38
+- وَلِيّ | rapproché (d’Allah) | waliyu | و ل ي
+- حَرْب | guerre | xare | ح ر ب
+- النَّوَافِل | les œuvres surérogatoires | jëf yu dul farata | ن ف ل
+- بَصَر | vue | gis | ب ص ر
+# N39
+- الخَطَأ | l’erreur | njuumte | خ ط ا
+- النِّسْيَان | l’oubli | fàtte | ن س ي
+- اسْتُكْرِهُوا | ils ont été contraints | dees leen forse | ك ر ه
+# N40
+- غَرِيب | étranger | doxandéem | غ ر ب
+- صِحَّة | santé | wér-gi-yaram | ص ح ح
+- مَرَض | maladie | feebar | م ر ض
+- حَيَاة | vie | dund | ح ي ي
+# N41
+- هَوَى | désir | bëgg-bëgg | ه و ي
+- تَبَع | qui suit | topp | ت ب ع
+- جِئْتُ بِهِ | ce que j’ai apporté | li ma indi | ج ي ا
+# N42
+- ابْن آدَم | fils d’Adam | doomu-aadama | ب ن ي
+- دَعَوْتَنِي | tu M’as invoqué | ñaan nga Ma | د ع و
+- ذُنُوب | péchés | bàkkaar yi | ذ ن ب
+- مَغْفِرَة | pardon | njéggal | غ ف ر

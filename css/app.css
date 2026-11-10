@@ -1,4 +1,4 @@
-/* DAGAN — feuille de style unique, pensée d’abord pour l’iPhone. */
+/* Daaraji — feuille de style unique, pensée d’abord pour l’iPhone. */
 
 @font-face {
   font-family: 'Scheherazade New';
@@ -416,6 +416,20 @@ input[type="range"] { width: 100%; accent-color: var(--primary); }
   border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
 }
 .empty { text-align: center; padding: 30px 16px; color: var(--muted); }
+
+/* ── Livres ──────────────────────────────── */
+.book-unit { padding: 14px 14px 12px; }
+.book-ar { font-size: calc(26px * var(--ar-scale)); line-height: 2.1; text-align: right; }
+.book-ar .w { border-radius: 6px; padding: 0 1px; cursor: pointer; }
+.book-ar .w:active, .book-ar .w.active { background: var(--hl); }
+.book-fr { margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--border); font-size: 16px; }
+
+/* ── Tableaux de grammaire ───────────────── */
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.gtable { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+.gtable th, .gtable td { padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: start; vertical-align: middle; }
+.gtable th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: var(--surface-2); }
+.gtable tr:last-child td { border-bottom: 0; }
 
 @media (min-width: 520px) {
   .letters { grid-template-columns: repeat(6, 1fr); }

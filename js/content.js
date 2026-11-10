@@ -2,10 +2,11 @@
 
 import { SURAHS } from './data/quran.js';
 import { LESSONS } from './data/vocab.js';
+import { BOOKS } from './data/books/index.js';
 import { getState, update } from './store.js';
 import { toWolofal } from './wolofal.js';
 
-export { SURAHS, LESSONS };
+export { SURAHS, LESSONS, BOOKS };
 
 export const BISMILLAH = SURAHS[0].verses[0].ar;
 
@@ -39,6 +40,13 @@ export function getSurah(id) {
 // Mot du Coran : « q:sourate:verset:mot » ; mot de vocabulaire : « v:leçon:index »
 export const qid = (s, v, w) => `q:${s}:${v}:${w}`;
 export const vid = (lessonId, i) => `v:${lessonId}:${i}`;
+// Mot de vocabulaire d'un livre : « b:livre:chapitre:index » ; mot de mon dictionnaire : « u:clé »
+export const bid = (bookId, chapterId, i) => `b:${bookId}:${chapterId}:${i}`;
+export const uid = (key) => `u:${key}`;
+
+export function getBook(id) {
+  return BOOKS.find((b) => b.id === id);
+}
 
 // Une correction s'applique aussi aux autres occurrences du même mot
 // (même écriture arabe et même wolof d'origine, sans tenir compte des majuscules).
@@ -87,7 +95,85 @@ export function getItem(id) {
       original: { fr: word.fr, wo: word.wo },
     });
   }
+  if (parts[0] === 'b') {
+    const book = getBook(parts[1]);
+    const chapter = book?.chapters.find((c) => c.id === parts[2]);
+    const word = chapter?.vocab[Number(parts[3])];
+    if (!word) return null;
+    return applyCorrection(id, {
+      id, kind: 'b', book: book.id, chapter: chapter.id, i: Number(parts[3]),
+      ar: word.ar, tr: '', fr: word.fr, wo: word.wo,
+      root: word.root || '', note: '',
+      source: `${book.title} — ${chapter.title}`,
+      audio: { tts: word.ar },
+      original: { fr: word.fr, wo: word.wo },
+    });
+  }
+  if (parts[0] === 'u') {
+    const key = parts.slice(1).join(':');
+    const word = getState().userDict?.[key];
+    if (!word) return null;
+    return {
+      id, kind: 'u', key, ar: word.ar, tr: '', fr: word.fr || '', wo: word.wo || '',
+      root: word.root || '', note: '', source: word.source || 'Mon dictionnaire',
+      audio: { tts: word.ar }, original: { fr: word.fr, wo: word.wo },
+      corrected: false, wolofal: toWolofal(word.wo || ''),
+    };
+  }
   return null;
+}
+
+// ── Dictionnaire : retrouver un mot arabe rencontré dans un texte ──
+let dictIndex = null;
+function buildDict() {
+  dictIndex = new Map();
+  const add = (ar, id) => {
+    const k = stripMarks(ar).replace(/[^\u0621-\u064A]/g, '');
+    if (k && !dictIndex.has(k)) dictIndex.set(k, id);
+  };
+  LESSONS.forEach((l) => l.words.forEach((w, i) => add(w.ar, vid(l.id, i))));
+  BOOKS.forEach((b) => b.chapters.forEach((c) => c.vocab.forEach((w, i) => add(w.ar, bid(b.id, c.id, i)))));
+  SURAHS.forEach((s) => s.verses.forEach((v) => v.w.forEach((w, i) => add(w.ar, qid(s.id, v.n, i + 1)))));
+  return dictIndex;
+}
+
+export function dictKey(ar) {
+  return stripMarks(ar).replace(/[^\u0621-\u064A]/g, '');
+}
+
+// Cherche un mot : forme exacte, puis sans préfixes (و ف ب ل ك ال) ni suffixes pronominaux.
+export function lookupWord(ar) {
+  const dict = dictIndex || buildDict();
+  const user = getState().userDict || {};
+  const base = dictKey(ar);
+  if (!base) return null;
+  if (user[base]) return { id: uid(base), exact: true };
+  const tried = new Set();
+  const candidates = [];
+  const push = (k, exact) => { if (k.length >= 2 && !tried.has(k)) { tried.add(k); candidates.push([k, exact]); } };
+  push(base, true);
+  const prefixes = ['وال', 'فال', 'بال', 'كال', 'لل', 'ال', 'و', 'ف', 'ب', 'ل', 'ك', 'س'];
+  const suffixes = ['هما', 'كما', 'هم', 'هن', 'كم', 'كن', 'نا', 'ها', 'ه', 'ك', 'ي'];
+  const stems = [base];
+  for (const p of prefixes) if (base.startsWith(p) && base.length - p.length >= 2) stems.push(base.slice(p.length), 'ال' + base.slice(p.length));
+  if (base.startsWith('لل')) stems.push('ال' + base.slice(1)); // لِلَّهِ -> الله
+  for (const st of [...stems]) for (const sf of suffixes) if (st.endsWith(sf) && st.length - sf.length >= 2) stems.push(st.slice(0, -sf.length));
+  stems.forEach((st, k) => { push(st, k === 0); if (st.endsWith('ة')) push(st.slice(0, -1) + 'ت', false); if (st.endsWith('ت')) push(st.slice(0, -1) + 'ة', false); });
+  candidates.sort((a, b) => (b[1] - a[1]) || (b[0].length - a[0].length)); // forme exacte, puis la plus longue
+  for (const [k, exact] of candidates) {
+    if (user[k]) return { id: uid(k), exact };
+    if (dict.has(k)) return { id: dict.get(k), exact };
+  }
+  return null;
+}
+
+export function saveUserWord(ar, { fr, wo, source }) {
+  const key = dictKey(ar);
+  update((s) => {
+    s.userDict = s.userDict || {};
+    s.userDict[key] = { ar, fr, wo, source };
+  });
+  return uid(key);
 }
 
 export function saveCorrection(id, { fr, wo, wolofal }) {
@@ -140,6 +226,7 @@ export function roots() {
     rootIndex.get(root).push(id);
   };
   LESSONS.forEach((l) => l.words.forEach((w, i) => add(w.root, vid(l.id, i))));
+  BOOKS.forEach((b) => b.chapters.forEach((c) => c.vocab.forEach((w, i) => add(w.root, bid(b.id, c.id, i)))));
   SURAHS.forEach((s) => s.verses.forEach((v) => v.w.forEach((w, i) => add(w.root, qid(s.id, v.n, i + 1)))));
   return rootIndex;
 }
@@ -184,4 +271,9 @@ export function surahWordIds(s) {
 export function lessonWordIds(lessonId) {
   const lesson = LESSONS.find((l) => l.id === lessonId);
   return lesson.words.map((_, i) => vid(lesson.id, i));
+}
+
+export function chapterWordIds(bookId, chapterId) {
+  const chapter = getBook(bookId)?.chapters.find((c) => c.id === chapterId);
+  return chapter ? chapter.vocab.map((_, i) => bid(bookId, chapterId, i)) : [];
 }

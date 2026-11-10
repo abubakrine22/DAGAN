@@ -1,6 +1,7 @@
 // Sauvegarde locale de la progression (sur le téléphone uniquement).
 
-const KEY = 'dagan:v1';
+const KEY = 'daaraji:v1';
+const OLD_KEYS = ['dagan:v1']; // ancien nom de l'application
 
 export const DEFAULT_SETTINGS = {
   translit: true,      // afficher la translittération
@@ -23,7 +24,8 @@ function fresh() {
     settings: { ...DEFAULT_SETTINGS },
     srs: {},
     corrections: {},
-    progress: { surahs: {}, fluent: {}, lettersSeen: {}, quizzes: {}, lastSurah: null },
+    progress: { surahs: {}, fluent: {}, lettersSeen: {}, quizzes: {}, lastSurah: null, books: {}, grammar: {} },
+    userDict: {},
     activity: {},
     streak: { last: null, count: 0 },
     hints: {},
@@ -36,7 +38,8 @@ const listeners = new Set();
 
 function load() {
   try {
-    const raw = localStorage.getItem(KEY);
+    let raw = localStorage.getItem(KEY);
+    if (!raw) raw = OLD_KEYS.map((k) => localStorage.getItem(k)).find(Boolean) || null;
     if (!raw) return fresh();
     return migrate(JSON.parse(raw));
   } catch {
@@ -115,12 +118,12 @@ export function currentStreak() {
 }
 
 export function exportData() {
-  return JSON.stringify({ app: 'DAGAN', exportedAt: new Date().toISOString(), data: state }, null, 1);
+  return JSON.stringify({ app: 'Daaraji', exportedAt: new Date().toISOString(), data: state }, null, 1);
 }
 
 export function importData(text) {
   const parsed = JSON.parse(text);
-  const data = parsed && parsed.app === 'DAGAN' ? parsed.data : parsed;
+  const data = parsed && (parsed.app === 'Daaraji' || parsed.app === 'DAGAN') ? parsed.data : parsed;
   if (!data || typeof data !== 'object' || !data.settings) throw new Error('Fichier non reconnu');
   state = migrate(data);
   save();

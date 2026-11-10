@@ -1,9 +1,9 @@
 // Composants partagés : fiche d'un mot, formulaire de correction, moteur de quiz.
 
 import { h, ar, wolofalEl, icon, sheet, closeSheet, toast, progressBar, shuffle } from './ui.js';
-import { getItem, saveCorrection, resetCorrection, wordsOfRoot } from './content.js';
+import { getItem, saveCorrection, resetCorrection, wordsOfRoot, lookupWord, saveUserWord } from './content.js';
 import { addCards, hasCard, removeCard } from './srs.js';
-import { play } from './audio.js';
+import { play, speak } from './audio.js';
 import { settings, logActivity } from './store.js';
 import { toWolofal } from './wolofal.js';
 
@@ -250,4 +250,43 @@ export function meaningQuestions(ids, pool, n = 10) {
       audio: it.audio,
     };
   });
+}
+
+// Fiche d'un mot touché dans un texte (livre) : sens connu, forme proche, ou ajout à mon dictionnaire.
+export function openTextWordSheet(word, source) {
+  const found = lookupWord(word);
+  if (found) {
+    const s = openWordSheet(found.id);
+    if (!found.exact) {
+      s.panel.querySelector('.sheet-head h3').textContent = 'Forme proche';
+      s.panel.querySelector('.sheet-head').after(h('div', { class: 'note', style: { marginBottom: '8px' } },
+        'Dans le texte : ', ar(word, 'ar-s'), '. Le mot ci-dessous a la même base (préfixe ou pronom en plus).'));
+    }
+    return s;
+  }
+  const fr = h('input', { class: 'input', placeholder: 'Sens en français', autocomplete: 'off' });
+  const wo = h('input', { class: 'input', placeholder: 'Sens en wolof (facultatif)', autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false' });
+  const preview = wolofalEl('');
+  wo.addEventListener('input', () => { preview.textContent = toWolofal(wo.value); });
+  const form = h('form', {
+    on: {
+      submit: (e) => {
+        e.preventDefault();
+        if (!fr.value.trim()) { fr.focus(); return; }
+        const id = saveUserWord(word, { fr: fr.value.trim(), wo: wo.value.trim(), source });
+        addCards([id]);
+        logActivity(1);
+        toast('Mot ajouté à votre dictionnaire et à vos révisions.');
+        closeSheet();
+      },
+    },
+  },
+    h('div', { class: 'center' }, ar(word, 'ar-xl')),
+    h('div', { class: 'btn-row', style: { justifyContent: 'center' } }, h('button', { class: 'btn small', type: 'button', on: { click: () => speak(word) } }, icon('volume'), 'Écouter')),
+    h('p', { class: 'muted' }, 'Ce mot n’est pas encore dans le dictionnaire de Daaraji. Cherchez son sens (enseignant, dictionnaire, traduction du passage) et ajoutez-le : il entrera dans vos révisions.'),
+    h('label', { class: 'field' }, h('span', null, 'Français'), fr),
+    h('label', { class: 'field' }, h('span', null, 'Wolof'), wo),
+    preview,
+    h('button', { class: 'btn primary block', type: 'submit', style: { marginTop: '10px' } }, icon('plus'), 'Ajouter à mon dictionnaire'));
+  return sheet('Mot inconnu', form);
 }

@@ -1,8 +1,8 @@
-// Service worker de DAGAN — fichier généré par outils/construire-sw.py.
+// Service worker de Daaraji — fichier généré par outils/construire-sw.py.
 // L'application fonctionne hors connexion ; seuls les fichiers audio demandent Internet.
 
 const VERSION = '__VERSION__';
-const CACHE = `dagan-${VERSION}`;
+const CACHE = `daaraji-${VERSION}`;
 const FICHIERS = [
 __FICHIERS__
 ];
@@ -14,7 +14,7 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k.startsWith('dagan-') && k !== CACHE).map((k) => caches.delete(k))))
+      .then((keys) => Promise.all(keys.filter((k) => (k.startsWith('daaraji-') || k.startsWith('dagan-')) && k !== CACHE).map((k) => caches.delete(k))))
       .then(() => self.clients.claim()),
   );
 });

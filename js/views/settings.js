@@ -62,7 +62,7 @@ export function settingsView() {
       toast('Progression restaurée.');
       refresh();
     } catch {
-      toast('Ce fichier n’est pas une sauvegarde DAGAN.');
+      toast('Ce fichier n’est pas une sauvegarde Daaraji.');
     }
   });
 
@@ -92,7 +92,7 @@ export function settingsView() {
     h('div', { class: 'card' },
       h('p', null, nCorr ? `Vous avez corrigé ${nCorr} traduction${nCorr > 1 ? 's' : ''}.` : 'Aucune correction pour l’instant. Touchez un mot, puis « Corriger » pour améliorer le français ou le wolof.'),
       nCorr ? h('div', { class: 'btn-row' },
-        h('button', { class: 'btn small primary', type: 'button', on: { click: () => shareText(`Corrections DAGAN (référence | arabe | français | wolof)\n${correctionsAsText()}`) } }, icon('share'), 'Partager'),
+        h('button', { class: 'btn small primary', type: 'button', on: { click: () => shareText(`Corrections Daaraji (référence | arabe | français | wolof)\n${correctionsAsText()}`) } }, icon('share'), 'Partager'),
         h('button', { class: 'btn small danger', type: 'button', on: { click: () => { if (confirm('Effacer toutes vos corrections ?')) { update((x) => { x.corrections = {}; }); refresh(); } } } }, 'Tout effacer')) : null,
       h('p', { class: 'small muted' }, 'Partagez-les (par exemple avec le développeur ou votre oustaz) pour qu’elles soient intégrées à l’application pour tous.')),
 
@@ -100,7 +100,7 @@ export function settingsView() {
     h('div', { class: 'card' },
       h('p', null, `${s.total} mots en révision • tout est enregistré sur ce téléphone, sans compte.`),
       h('div', { class: 'btn-row' },
-        h('button', { class: 'btn small', type: 'button', on: { click: () => shareOrDownload(`dagan-sauvegarde-${new Date().toISOString().slice(0, 10)}.json`, exportData()) } }, icon('download'), 'Sauvegarder'),
+        h('button', { class: 'btn small', type: 'button', on: { click: () => shareOrDownload(`daaraji-sauvegarde-${new Date().toISOString().slice(0, 10)}.json`, exportData()) } }, icon('download'), 'Sauvegarder'),
         h('button', { class: 'btn small', type: 'button', on: { click: () => fileInput.click() } }, icon('upload'), 'Restaurer'),
         fileInput),
       h('button', { class: 'btn small danger block', type: 'button', style: { marginTop: '10px' }, on: { click: () => { if (confirm('Tout effacer ? Votre progression sera perdue.')) { resetAll(); toast('Progression effacée.'); refresh(); } } } }, 'Réinitialiser l’application')),
@@ -115,17 +115,20 @@ export function aboutView() {
   const src = (title, text) => h('div', { class: 'card' }, h('h3', null, title), h('p', { class: 'small' }, text));
   const node = h('div', null,
     h('div', { class: 'card center' },
-      h('h2', null, 'DAGAN'),
-      h('p', null, 'Apprendre à lire et à comprendre l’arabe du Coran, avec le français et le wolof.'),
-      h('p', { class: 'small muted' }, 'Version 1 — lecture fluide, 12 sourates mot à mot, 120 mots fréquents, racines.')),
+      h('h2', null, 'Daaraji'),
+      h('p', null, 'Votre daara de poche : apprendre à lire et à comprendre l’arabe du Coran et des textes religieux, avec le français et le wolof.'),
+      h('p', { class: 'small muted' }, 'Version 2 — lecture fluide, 12 sourates mot à mot, 4 livres (40 hadiths, Al-Akhdari, Les trois fondements, Les quatre règles), 23 leçons de grammaire et de conjugaison, 200 mots de vocabulaire.')),
     h('div', { class: 'section-title' }, 'Sources'),
     src('Texte du Coran', 'Écriture uthmani du mushaf de Médine (lecture de Hafs), via QuranEnc (Encyclopédie du Noble Coran) et le paquet libre « quran-json » (licence CC BY-SA 4.0).'),
-    src('Traduction française', 'Traduction du sens du Coran par Muhammad Hamidullah, révisée par le Complexe du Roi Fahd, diffusée par QuranEnc. Les gloses françaises mot à mot sont propres à DAGAN.'),
+    src('Traduction française', 'Traduction du sens du Coran par Muhammad Hamidullah, révisée par le Complexe du Roi Fahd, diffusée par QuranEnc. Les gloses françaises mot à mot sont propres à Daaraji.'),
     src('Mot à mot et audio des mots', 'Découpage, translittération et enregistrements mot par mot : Quran.com.'),
+    src('Les 40 hadiths', 'Texte arabe : paquet libre « nawawi-40-hadith-data » (CC BY 4.0). Traduction française, titres et vocabulaire : Daaraji.'),
+    src('Al-Akhdari', 'Texte arabe vocalisé : al-Maktaba ash-Shâmila (livre n° 9548), quelques coquilles corrigées. Traduction française et vocabulaire : Daaraji.'),
+    src('Les trois fondements et Les quatre règles', 'Texte arabe : édition vérifiée par Sâlih al-‘Usaymî, publiée par le réseau al-Alûka (vocalisation sans sukûn). Traduction française et vocabulaire : Daaraji.'),
     src('Récitations', 'Fichiers audio verset par verset : EveryAyah.com (Al-Husary, Al-Minshawi, Al-Afasy, Abdul-Basit).'),
-    src('Wolof et wolofal', 'Les traductions wolof ont été rédigées pour DAGAN et doivent être vérifiées par un locuteur ou un enseignant : corrigez-les librement. Le wolofal est généré automatiquement selon l’orthographe harmonisée (DPLN, 1990), décrite par Richard Ishida (« Arabic (Wolofal) orthography notes »).'),
+    src('Wolof et wolofal', 'Les traductions wolof ont été rédigées pour Daaraji et doivent être vérifiées par un locuteur ou un enseignant : corrigez-les librement. Le wolofal est généré automatiquement selon l’orthographe harmonisée (DPLN, 1990), décrite par Richard Ishida (« Arabic (Wolofal) orthography notes »).'),
     src('Police arabe', 'Scheherazade New, de SIL Global, sous licence SIL Open Font License 1.1. Elle prend en charge les signes du Coran et les lettres du wolofal.'),
-    h('p', { class: 'small muted', style: { marginTop: '14px' } }, 'Pour une récitation correcte, rien ne remplace un enseignant : utilisez DAGAN comme compagnon de votre apprentissage.'),
+    h('p', { class: 'small muted', style: { marginTop: '14px' } }, 'Pour une récitation correcte, rien ne remplace un enseignant : utilisez Daaraji comme compagnon de votre apprentissage.'),
   );
   return { title: 'À propos', back: '#/reglages', node };
 }
